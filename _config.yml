@@ -2,6 +2,7 @@
 gems:
   - jemoji
   - jekyll-paginate
+  - bourbon
 
 # Site settings
 title: "Mediator"
@@ -27,6 +28,20 @@ twitter_handle: '@dirkfabisch'
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
+
+# asset pipline configuration
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+  cache:          true
+
+# exclude files we don't want to publish
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - .gitignore
+  - .ruby-version
 
 # social icons and sharing options
 social:
